@@ -1,0 +1,6 @@
+{
+  "name": "Mentra - Educational Intelligence Platform",
+  "description": "Full-stack educational intelligence platform powered by Gemini AI, featuring Socratic AI tutoring, real-time doubt logging, AI peer pod clustering, automated remediation, assessment analysis, adaptive practice quizzes, and teacher/admin portals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

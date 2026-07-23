@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+  body {
+    background-color: #0A0A0B;
+    color: #EDEDED;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeSpeed;
+  }
+}
+
+/* Low processing power optimizations */
+.optimize-render {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 300px;
+  transform: translateZ(0);
+}
+
+/* Low Power Mode styles for low-spec / Chromebook hardware */
+.low-power-mode * {
+  animation: none !important;
+  transition: none !important;
+  backdrop-filter: none !important;
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+.low-power-mode .blur-3xl,
+.low-power-mode .backdrop-blur-sm,
+.low-power-mode .backdrop-blur-md {
+  display: none !important;
+}
+
+/* Custom scrollbars for dark UI */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0A0B;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272A;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3F3F46;
+}
+
